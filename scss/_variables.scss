@@ -90,7 +90,7 @@ $card-border-width:                 none !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 none !default;
 $card-bg:                           $white !default;
-$card-cap-bg:                       $light !default;
+$card-cap-bg:                       lighten($light, 1%) !default;
 
 //Tables
 
