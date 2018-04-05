@@ -1,2 +1,2 @@
-# opis
-Opis theme for Boostrap 4
+# Opis Theme
+For Boostrap 4
