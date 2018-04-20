@@ -26,7 +26,7 @@ $red:     #ff596f !default;
 $orange:  #ff8d2a !default;
 $yellow:  #f7b437 !default;
 $green:   #20c64a !default;
-$teal:    #0fccac !default;
+$teal:    #05c2a2 !default;
 $cyan:    #04b8d8 !default;
 
 $primary:       $teal !default;
@@ -131,7 +131,7 @@ $input-bg:                              $light !default;
 $input-disabled-bg:                     $gray-200 !default;
 
 $input-color:                           $gray-600 !default;
-$input-border-color:                    lighten($primary, 25%) !default;
+$input-border-color:                    lighten($secondary, 25%) !default;
 $input-border-width:                    1px !default;
 $input-box-shadow:                      none !default;
 
@@ -164,7 +164,7 @@ $pagination-color:                  $secondary !default;
 $pagination-bg:                     $white !default;
 $pagination-active-bg:              $primary !default;
 $pagination-border-width:           1px !default;
-$pagination-border-color:           lighten($primary, 25%) !default;
+$pagination-border-color:           lighten($secondary, 25%) !default;
 $pagination-disabled-bg:            $white !default;
 $pagination-disabled-color:         darken($card-bg, 15%) !default;
 
