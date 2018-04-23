@@ -10,7 +10,7 @@ GitHub: cristiansarca.github.io
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,500,700");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700");
 :root {
   --blue: #4281f8;
   --indigo: #786afa;
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-family: inherit;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   color: inherit;
 }
