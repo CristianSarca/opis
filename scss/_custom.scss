@@ -5,12 +5,23 @@ Author: Cristian Sarca
 GitHub: cristiansarca.github.io
 =============================================================*/
 
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100,300,500,700');
 
+
+::selection {
+    background: rgba(126, 235, 217, .5);
+}
 //NAVBAR
 
 .navbar {
-    box-shadow: 0 .1rem .2rem rgba($black, .175);
+    box-shadow: 0 .1rem .4rem rgba($black, .15);
+    .form-control {
+        border: none;
+        &:focus, &:active {
+            border: 1px solid $primary;
+        }
+    }
+
 }
 
 .navbar-dark,
@@ -57,25 +68,12 @@ GitHub: cristiansarca.github.io
   }
 }
 
-.btn-info {
-    color: $dark;
-}
-
-
-.btn-outline-info {
-    border-color: darken($info, 7.5%);
-    color: darken($info, 7.5%);
-}
-
 
 // Alerts
 @each $color, $value in $theme-colors {
     .alert-#{$color} {
-      @include alert-variant(theme-color-level($color, 0), theme-color-level($color, 0), theme-color-level($color, -10));
+      @include alert-variant(theme-color-level($color, 0), theme-color-level($color, 0), theme-color-level($color, -12));
     }
-  }
-  .alert-info {
-      color: $secondary;
   }
   
 // Tables
@@ -98,14 +96,16 @@ GitHub: cristiansarca.github.io
 }
 
 @each $color, $value in $theme-colors {
-    @include table-row-variant($color, theme-color-level($color, 0), theme-color-level($color, -8));
+    @include table-row-variant($color, theme-color-level($color, 0), theme-color-level($color, -11));
   }
 
 
 
 //Forms
 
-
+.form-control {
+    font-weight: $font-weight-normal;
+}
 .form-control-plaintext {
     color: color-yiq($body-bg);
 }
@@ -120,7 +120,7 @@ GitHub: cristiansarca.github.io
 }
 
 .card {
-    box-shadow: 0 .1rem .1rem rgba($black, .300);
+    box-shadow: 0 .1rem .4rem rgba($black, .15);
 }
 
 @each $color, $value in $theme-colors {
